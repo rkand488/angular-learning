@@ -1,0 +1,7 @@
+<p>Welcome {{username ? username : 'Guest!'}}</p>
+<a *ngIf="username" (click)="logout()">Logout</a><br>
+<a *ngIf="username==''" [routerLink]="['/login']">Login</a><br>
+<a [routerLink]="['/about']">About page</a>
+<ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert>
