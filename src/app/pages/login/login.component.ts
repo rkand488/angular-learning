@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
       if (this.f.username.value == 'abcd' && this.f.password.value == '1234') {
         localStorage.setItem('login', this.form.value.username);
         this.message = '';
-        this.router.navigateByUrl("/");
+        this.router.navigateByUrl("/admin");
       } else {
         this.message = "Invalide credential!";
       }
