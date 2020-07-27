@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-3">
             <div class="card bg-primary text-white">
                 <div class="card-body">Basic card</div>
@@ -19,6 +19,11 @@
             <div class="card bg-warning text-white">
                 <div class="card-body">Basic card</div>
             </div>
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col-md-3" *ngFor="let card of cards">
+            <app-dashboard-card (changeText)="clickCard($event)" [cardClass]="card.class" [cardTitle]="card.name"></app-dashboard-card>
         </div>
     </div>
 </div>

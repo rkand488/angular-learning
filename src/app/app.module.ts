@@ -11,6 +11,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AdminTemplateComponent } from './template/admin-template/admin-template.component';
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
+import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TodoListComponent } from './pages/todo-list/todo-list.component';
     LoginComponent,
     DashboardComponent,
     AdminTemplateComponent,
-    TodoListComponent
+    TodoListComponent,
+    DashboardCardComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { TodoListComponent } from './pages/todo-list/todo-list.component';
     FormsModule,
     ReactiveFormsModule
   ],
+  exports: [DashboardCardComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
