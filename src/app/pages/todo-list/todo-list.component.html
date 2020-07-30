@@ -1,6 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
+            <p>Username: {{formdata.username}}</p>
+            <p>Password: {{formdata.password}}</p>
+            <p>Gender: {{formdata.gender}}</p>
+        </div>
+        <div class="col-md-6">
             <input type="text" [(ngModel)]="text" placeholder="Enter to do" />
             <!-- <span>typed:- {{text}}</span> -->
             <button type="button" (click)="addtodo()" class="btn btn-success btn-flat btn-sm">Add</button>

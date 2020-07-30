@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormService } from '../../services/form.service';
 
 @Component({
   selector: 'app-todo-list',
@@ -9,9 +10,13 @@ export class TodoListComponent implements OnInit {
 
   text: string = "";
   items: any = [];
-  constructor() { }
+  formdata: any = {};
+  constructor(private formservice: FormService) { }
 
   ngOnInit(): void {
+    this.formservice.getform().subscribe((res: any) => {
+      this.formdata = res;
+    });
     this.items = [
       { name: "rakesh", time: new Date() },
       { name: "rakesh2", time: new Date() },

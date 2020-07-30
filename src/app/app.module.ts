@@ -12,6 +12,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AdminTemplateComponent } from './template/admin-template/admin-template.component';
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
 import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
+import { FormdataComponent } from './pages/formdata/formdata.component';
+import { FormshowComponent } from './pages/formshow/formshow.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { DashboardCardComponent } from './components/dashboard-card/dashboard-ca
     DashboardComponent,
     AdminTemplateComponent,
     TodoListComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    FormdataComponent,
+    FormshowComponent
   ],
   imports: [
     BrowserModule,

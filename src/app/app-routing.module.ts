@@ -9,6 +9,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AdminTemplateComponent } from './template/admin-template/admin-template.component';
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
+import { FormdataComponent } from './pages/formdata/formdata.component';
+import { FormshowComponent } from './pages/formshow/formshow.component';
 
 const routes: Routes = [
   {
@@ -27,6 +29,12 @@ const routes: Routes = [
       },
       {
         path: 'todo-list', component: TodoListComponent
+      },
+      {
+        path: 'form', component: FormdataComponent
+      },
+      {
+        path: 'form-show', component: FormshowComponent
       }
     ]
   },
