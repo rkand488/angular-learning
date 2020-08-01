@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { TodoListComponent } from './pages/todo-list/todo-list.component';
 import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
 import { FormdataComponent } from './pages/formdata/formdata.component';
 import { FormshowComponent } from './pages/formshow/formshow.component';
+import { CountryListComponent } from './pages/country-list/country-list.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,16 @@ import { FormshowComponent } from './pages/formshow/formshow.component';
     TodoListComponent,
     DashboardCardComponent,
     FormdataComponent,
-    FormshowComponent
+    FormshowComponent,
+    CountryListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   exports: [DashboardCardComponent],
   providers: [],

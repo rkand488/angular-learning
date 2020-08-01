@@ -11,6 +11,7 @@ import { AdminTemplateComponent } from './template/admin-template/admin-template
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
 import { FormdataComponent } from './pages/formdata/formdata.component';
 import { FormshowComponent } from './pages/formshow/formshow.component';
+import { CountryListComponent } from './pages/country-list/country-list.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,9 @@ const routes: Routes = [
       },
       {
         path: 'form-show', component: FormshowComponent
+      },
+      {
+        path: 'country', component: CountryListComponent
       }
     ]
   },
