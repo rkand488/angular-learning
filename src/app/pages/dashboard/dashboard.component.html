@@ -26,4 +26,9 @@
             <app-dashboard-card (changeText)="clickCard($event)" [cardClass]="card.class" [cardTitle]="card.name"></app-dashboard-card>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-3">
+            {{user|json}}
+        </div>
+    </div>
 </div>
