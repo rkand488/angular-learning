@@ -24,6 +24,12 @@ const routes: Routes = [
     path: 'login', component: LoginComponent
   },
   {
+    path: 'web', loadChildren: './web/web.module#WebModule'
+  },
+  {
+    path: 'user', loadChildren: './user/user.module#UserModule'
+  },
+  {
     path: 'admin', component: AdminTemplateComponent, canActivate: [AuthGuard], children: [
       {
         path: '', component: DashboardComponent

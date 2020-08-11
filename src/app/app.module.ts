@@ -16,6 +16,8 @@ import { DashboardCardComponent } from './components/dashboard-card/dashboard-ca
 import { FormdataComponent } from './pages/formdata/formdata.component';
 import { FormshowComponent } from './pages/formshow/formshow.component';
 import { CountryListComponent } from './pages/country-list/country-list.component';
+import { WebModule } from './web/web.module';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { CountryListComponent } from './pages/country-list/country-list.componen
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    WebModule,
+    UserModule
   ],
   exports: [DashboardCardComponent],
   providers: [],
