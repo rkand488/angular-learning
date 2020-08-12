@@ -14,7 +14,7 @@ export class CountryListComponent implements OnInit {
   ngOnInit(): void {
     this.api.get('country').subscribe((res: any) => {
       this.country = res;
-      console.log(res);
+      // console.log(res);
     });
   }
 

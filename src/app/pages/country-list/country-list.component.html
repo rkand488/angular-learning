@@ -9,6 +9,7 @@
                                 <th>#</th>
                                 <th>Name</th>
                                 <th>Code</th>
+                                <th>Concate using pipe</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -16,6 +17,7 @@
                                 <td>{{i+1}}</td>
                                 <td>{{country.name}}</td>
                                 <td>{{country.code}}</td>
+                                <td>{{country | countrycode}}</td>
                             </tr>
                         </tbody>
                     </table>

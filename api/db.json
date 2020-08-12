@@ -5,6 +5,31 @@
         "name": "Admin",
         "token": "as234987kjrlkdfjlkasdjflasjflkasjflkajsfkl"
     }],
+    "class": [{
+            "name": "First",
+            "subject": [{
+                    "name": "English",
+                    "author": ""
+                },
+                {
+                    "name": "Science",
+                    "author": ""
+                }
+            ]
+        },
+        {
+            "name": "Second",
+            "subject": [{
+                    "name": "Hindi",
+                    "author": ""
+                },
+                {
+                    "name": "Math",
+                    "author": ""
+                }
+            ]
+        }
+    ],
     "country": [{
             "name": "Afghanistan",
             "code": "AF"

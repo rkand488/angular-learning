@@ -18,6 +18,7 @@ import { FormshowComponent } from './pages/formshow/formshow.component';
 import { CountryListComponent } from './pages/country-list/country-list.component';
 import { WebModule } from './web/web.module';
 import { UserModule } from './user/user.module';
+import { CountrycodePipe } from './pipes/countrycode.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserModule } from './user/user.module';
     DashboardCardComponent,
     FormdataComponent,
     FormshowComponent,
-    CountryListComponent
+    CountryListComponent,
+    CountrycodePipe
   ],
   imports: [
     BrowserModule,
