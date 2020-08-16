@@ -45,6 +45,9 @@ const routes: Routes = [
       },
       {
         path: 'country', component: CountryListComponent
+      },
+      {
+        path: 'country', component: CountryListComponent
       }
     ]
   },

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { FormService } from '../../services/form.service';
 
@@ -14,7 +14,7 @@ export class FormdataComponent implements OnInit {
   message: string = '';
   submitted: boolean = false;
   form: FormGroup;
-  constructor(private formbuilder: FormBuilder, private router: Router, private formservice: FormService) { }
+  constructor(private formbuilder: FormBuilder, private router: Router, private activerouter: ActivatedRoute, private formservice: FormService) { }
 
   ngOnInit(): void {
     this.form = this.formbuilder.group({

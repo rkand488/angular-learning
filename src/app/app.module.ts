@@ -19,6 +19,7 @@ import { CountryListComponent } from './pages/country-list/country-list.componen
 import { WebModule } from './web/web.module';
 import { UserModule } from './user/user.module';
 import { CountrycodePipe } from './pipes/countrycode.pipe';
+import { ChangeColorDirective } from './directives/change-color.directive';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CountrycodePipe } from './pipes/countrycode.pipe';
     FormdataComponent,
     FormshowComponent,
     CountryListComponent,
-    CountrycodePipe
+    CountrycodePipe,
+    ChangeColorDirective
   ],
   imports: [
     BrowserModule,
