@@ -10,6 +10,7 @@
                                 <th>Name</th>
                                 <th>Code</th>
                                 <th>Concate using pipe</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -18,6 +19,7 @@
                                 <td>{{country.name}}</td>
                                 <td>{{country.code}}</td>
                                 <td>{{country | countrycode}}</td>
+                                <td><a *ngIf="country.id" class="btn btn-info btn-sm btn-flat" [routerLink]="['/admin/country/'+country.id]">Edit</a></td>
                             </tr>
                         </tbody>
                     </table>

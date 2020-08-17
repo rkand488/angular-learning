@@ -20,6 +20,8 @@ import { WebModule } from './web/web.module';
 import { UserModule } from './user/user.module';
 import { CountrycodePipe } from './pipes/countrycode.pipe';
 import { ChangeColorDirective } from './directives/change-color.directive';
+import { CountryEditComponent } from './pages/country-edit/country-edit.component';
+import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ChangeColorDirective } from './directives/change-color.directive';
     FormshowComponent,
     CountryListComponent,
     CountrycodePipe,
-    ChangeColorDirective
+    ChangeColorDirective,
+    CountryEditComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

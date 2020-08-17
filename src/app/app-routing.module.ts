@@ -12,6 +12,8 @@ import { TodoListComponent } from './pages/todo-list/todo-list.component';
 import { FormdataComponent } from './pages/formdata/formdata.component';
 import { FormshowComponent } from './pages/formshow/formshow.component';
 import { CountryListComponent } from './pages/country-list/country-list.component';
+import { CountryEditComponent } from './pages/country-edit/country-edit.component';
+import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {
@@ -47,13 +49,12 @@ const routes: Routes = [
         path: 'country', component: CountryListComponent
       },
       {
-        path: 'country', component: CountryListComponent
+        path: 'country/:id', component: CountryEditComponent
       }
     ]
   },
-  {
-    path: '**', redirectTo: "home"
-  }
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: PagenotfoundComponent }
 ];
 
 
