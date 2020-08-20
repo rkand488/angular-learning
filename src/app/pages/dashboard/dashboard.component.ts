@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ApiService } from '../../services/api.service';
 
 @Component({
@@ -10,10 +11,11 @@ export class DashboardComponent implements OnInit {
 
   cards: any = [];
   user: any = {};
-  constructor(private api: ApiService) {
+  constructor(private api: ApiService, private titleService: Title) {
   }
 
   ngOnInit(): void {
+    this.titleService.setTitle("Dashboard");
     this.api.$user.subscribe((res: any) => {
       this.user = res;
     });

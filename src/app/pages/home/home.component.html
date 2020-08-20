@@ -7,3 +7,11 @@
 </ngb-alert>
 
 <p appChangeColor="red">Welcome</p>
+<p [innerHtml]="html"></p>
+<h1>Pipes</h1>
+<p>Slice: {{ 'Slice pipe will return substring starting from index 3 i.e character d and will include all characters before index 7 i.e up to g. The character at end index will not be included in the output substring.'| slice:0:50}}</p>
+<p>json {{jsonpipe|json}}</p>
+<p>keyvalue pipe</p>
+<ul>
+    <li *ngFor="let item of jsonpipe | keyvalue">{{item.key}} => {{item.value}}</li>
+</ul>
