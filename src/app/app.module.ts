@@ -42,7 +42,7 @@ import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.compone
     PagenotfoundComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     NgbModule,
     FormsModule,
