@@ -22,6 +22,7 @@ import { CountrycodePipe } from './pipes/countrycode.pipe';
 import { ChangeColorDirective } from './directives/change-color.directive';
 import { CountryEditComponent } from './pages/country-edit/country-edit.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
+import { ChatInboxComponent } from './pages/chat-inbox/chat-inbox.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.compone
     CountrycodePipe,
     ChangeColorDirective,
     CountryEditComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    ChatInboxComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

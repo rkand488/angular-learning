@@ -14,6 +14,7 @@ import { FormshowComponent } from './pages/formshow/formshow.component';
 import { CountryListComponent } from './pages/country-list/country-list.component';
 import { CountryEditComponent } from './pages/country-edit/country-edit.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
+import { ChatInboxComponent } from './pages/chat-inbox/chat-inbox.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,9 @@ const routes: Routes = [
       },
       {
         path: 'country/:id', component: CountryEditComponent
+      },
+      {
+        path:'chat', component:ChatInboxComponent
       }
     ]
   },

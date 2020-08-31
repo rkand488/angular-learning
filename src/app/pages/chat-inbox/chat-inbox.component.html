@@ -1,0 +1,11 @@
+<div class="chat-messages">
+    <div class="chat-messages-show-container">
+        <ul class="chat-messages-show-list">
+            <li *ngFor="let chat of chat" style="background:white; padding:15px 30px;border-bottom: 1px solid #ccc;margin:5px;" [ngStyle]="{'text-align': (chat.id == id) ? 'right':'left'}">{{chat.message}}<br><small>{{chat.time | date:'medium'}}</small></li>
+        </ul>
+    </div>
+    <div class="chat-messages-create-container">
+        <input class="chat-messages-create-input" [(ngModel)]="message" type="text">
+        <button class="chat-messages-create-button" (click)="SendMessage()"> Send </button>
+    </div>
+</div>
